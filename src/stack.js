@@ -12,6 +12,7 @@ class Stack {
     this.name = name;
     this.config = config;
     this.components = [];
+    this.globals = {};
     this.terraStackDir = path.join(process.cwd(), ".terrastack", name);
   }
 

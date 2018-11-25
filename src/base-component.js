@@ -5,8 +5,12 @@ class BaseComponent {
     this.name = name;
     this.output = wrap({});
     this.state = "constructed";
-    this.options = Object.assign({ destroy: false }, options);
+    this.options = Object.assign(
+      { destroy: false, remoteStateKey: null },
+      options
+    );
     this.bindings = {};
+    this.inputCallback = () => ({});
   }
 
   configure(input) {

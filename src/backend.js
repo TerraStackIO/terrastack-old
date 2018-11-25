@@ -14,7 +14,7 @@ class Backend {
   compile(key) {
     const config = Object.assign({}, this.terraformJSON);
     if (config.hasOwnProperty("s3")) {
-      _.set(config, "s3.key", "terrastack/" + key);
+      _.set(config, "s3.key", key);
     }
     return { terraform: [{ backend: [config] }] };
   }

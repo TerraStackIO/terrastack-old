@@ -63,7 +63,7 @@ export declare class BaseComponent<C extends object> {
    * @param name - Unique name for the component
    * {link}
    */
-  constructor(name: string);
+  constructor(name: string, options: object);
 
   /**
    * Define dependencies to other components.
