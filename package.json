@@ -1,6 +1,6 @@
 {
   "name": "terrastack",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "description": "TerraStack",
   "main": "src/index.js",
   "types": "src/index.d.ts",
